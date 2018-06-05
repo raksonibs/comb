@@ -30,4 +30,20 @@ defmodule Comb.Mixfile do
     [
     ]
   end
+
+  defp description() do
+    "Combination library"
+  end
+
+  defp package() do
+    [
+      # This option is only needed when you don't want to use the OTP application name
+      name: "comb",
+      # These are the default files included in the package
+      files: ["lib", "priv", "mix.exs", "README*", "readme*", "LICENSE*", "license*"],
+      maintainers: ["Oskar Niburski"], # note: Original library not published on hex, https://github.com/tallakt/comb
+      licenses: ["Apache 2.0"],
+      links: %{"GitHub" => "https://github.com/raksonibs/comb"}
+    ]
+  end
 end
